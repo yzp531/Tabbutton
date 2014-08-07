@@ -52,7 +52,7 @@ public class TabButton extends Button {
 			return;
 		}
 		setBgType(selected, selected_bg_res, normal_bg_res);
-		
+		System.out.print(1);
 	}
 
 	public void setBgType(boolean isSelect, int bgSelect, int bgNor) {
