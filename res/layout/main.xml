@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.sun.test.ui"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    
+     <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center" >
+
+        <com.sun.test.ui.TabButton
+            android:id="@+id/btn_left"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:text="左"
+            custom:type="LEFT"
+            />
+
+        <com.sun.test.ui.TabButton
+            android:id="@+id/btn_center"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/btn_left"
+            android:background="@drawable/btn_style"
+            android:text="中"
+            custom:type="MID"
+            />
+
+        <com.sun.test.ui.TabButton
+            android:id="@+id/btn_right"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/btn_center"
+            android:text="右"
+            custom:type="RIGHT"
+            />
+         
+    </RelativeLayout>
+
+
+</LinearLayout>
